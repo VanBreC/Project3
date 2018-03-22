@@ -16,5 +16,19 @@ namespace Project3
         {
             InitializeComponent();
         }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+                    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateStudentProfile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
