@@ -21,5 +21,17 @@ namespace Project3
         {
 
         }
+
+        private void CreateStudent_Click(object sender, EventArgs e)
+        {
+            CreateStudentProfile createStudentProfile = new CreateStudentProfile();
+            createStudentProfile.ShowDialog();
+        }
+
+        private void SearchStudent_Click(object sender, EventArgs e)
+        {
+            SearchStudentProfile searchStudentProfile = new SearchStudentProfile();
+            searchStudentProfile.ShowDialog();
+        }
     }
 }
