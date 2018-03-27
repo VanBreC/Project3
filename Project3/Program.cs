@@ -20,3 +20,6 @@ namespace Project3
         }
     }
 }
+// thinking of a way to create a data set that connects information together. like if i searched 1234
+// it would search the name and information assigned to that number. the student number will be created
+// from the random function but need to make it so that it cant use the same number twice.
