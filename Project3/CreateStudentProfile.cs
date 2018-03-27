@@ -17,10 +17,6 @@ namespace Project3
             InitializeComponent();
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-                    }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -29,6 +25,21 @@ namespace Project3
         private void CreateStudentProfile_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ScholarshipBox_CheckedChanged(object sender, EventArgs e)
+        {
+            string StudentTitle = "Scholarship";
+        }
+
+        private void AthleteBox_CheckedChanged(object sender, EventArgs e)
+        {
+            string StudentTitle = "Athlete";
+        }
+
+        private void StudentWorkerBox_CheckedChanged(object sender, EventArgs e)
+        {
+            string StudentTitle = "Student Worker";
         }
     }
 }

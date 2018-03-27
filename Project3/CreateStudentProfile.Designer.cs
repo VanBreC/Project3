@@ -33,8 +33,8 @@
             this.StudentWorkerBox = new System.Windows.Forms.CheckBox();
             this.CreateButton = new System.Windows.Forms.Button();
             this.CheckboxLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.FirstNTextBox = new System.Windows.Forms.TextBox();
+            this.LastNTextBox = new System.Windows.Forms.TextBox();
             this.ReturnButton = new System.Windows.Forms.Button();
             this.FNameLabel = new System.Windows.Forms.Label();
             this.LNameLabel = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@
             this.ScholarshipBox.TabIndex = 0;
             this.ScholarshipBox.Text = "Scholarship";
             this.ScholarshipBox.UseVisualStyleBackColor = true;
+            this.ScholarshipBox.CheckedChanged += new System.EventHandler(this.ScholarshipBox_CheckedChanged);
             // 
             // AthleteBox
             // 
@@ -61,6 +62,7 @@
             this.AthleteBox.TabIndex = 1;
             this.AthleteBox.Text = "Athlete";
             this.AthleteBox.UseVisualStyleBackColor = true;
+            this.AthleteBox.CheckedChanged += new System.EventHandler(this.AthleteBox_CheckedChanged);
             // 
             // StudentWorkerBox
             // 
@@ -72,6 +74,7 @@
             this.StudentWorkerBox.TabIndex = 2;
             this.StudentWorkerBox.Text = "Student Worker";
             this.StudentWorkerBox.UseVisualStyleBackColor = true;
+            this.StudentWorkerBox.CheckedChanged += new System.EventHandler(this.StudentWorkerBox_CheckedChanged);
             // 
             // CreateButton
             // 
@@ -94,21 +97,21 @@
             this.CheckboxLabel.TabIndex = 5;
             this.CheckboxLabel.Text = "Select which one applies to you";
             // 
-            // textBox1
+            // FirstNTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(698, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 30);
-            this.textBox1.TabIndex = 6;
+            this.FirstNTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNTextBox.Location = new System.Drawing.Point(698, 82);
+            this.FirstNTextBox.Name = "FirstNTextBox";
+            this.FirstNTextBox.Size = new System.Drawing.Size(189, 30);
+            this.FirstNTextBox.TabIndex = 6;
             // 
-            // textBox2
+            // LastNTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(698, 218);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 30);
-            this.textBox2.TabIndex = 7;
+            this.LastNTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNTextBox.Location = new System.Drawing.Point(698, 218);
+            this.LastNTextBox.Name = "LastNTextBox";
+            this.LastNTextBox.Size = new System.Drawing.Size(189, 30);
+            this.LastNTextBox.TabIndex = 7;
             // 
             // ReturnButton
             // 
@@ -148,8 +151,8 @@
             this.Controls.Add(this.LNameLabel);
             this.Controls.Add(this.FNameLabel);
             this.Controls.Add(this.ReturnButton);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.LastNTextBox);
+            this.Controls.Add(this.FirstNTextBox);
             this.Controls.Add(this.CheckboxLabel);
             this.Controls.Add(this.CreateButton);
             this.Controls.Add(this.StudentWorkerBox);
@@ -170,8 +173,8 @@
         private System.Windows.Forms.CheckBox StudentWorkerBox;
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.Label CheckboxLabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox FirstNTextBox;
+        private System.Windows.Forms.TextBox LastNTextBox;
         private System.Windows.Forms.Button ReturnButton;
         private System.Windows.Forms.Label FNameLabel;
         private System.Windows.Forms.Label LNameLabel;
