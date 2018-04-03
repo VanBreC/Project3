@@ -1,6 +1,6 @@
 ﻿namespace Project3
 {
-    partial class Form2
+    partial class Password
     {
         /// <summary>
         /// Required designer variable.
@@ -61,6 +61,7 @@
             this.Controls.Add(this.SignInLabel2);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

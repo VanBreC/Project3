@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project3
 {
-    public partial class Form2 : Form
+    public partial class Password : Form
     {
-        public Form2()
+        public Password()
         {
             InitializeComponent();
         }
@@ -21,11 +21,16 @@ namespace Project3
         {
             if (SignInPassword.Text == "1234")
             {
-                SelectionTab selectionTab = new SelectionTab();
-                selectionTab.ShowDialog();
+                ProcessSelectionTab processSelectionTab = new ProcessSelectionTab();
+                processSelectionTab.ShowDialog();
                 
 
             }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -26,7 +26,7 @@ namespace Project3
         {
             if (SignInUserName.Text == "home")
             {
-                Form2 passwordsignin = new Form2();
+                Password passwordsignin = new Password();
                 passwordsignin.ShowDialog();
                 
                 
