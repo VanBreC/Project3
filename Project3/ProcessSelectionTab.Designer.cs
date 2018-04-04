@@ -40,7 +40,7 @@
             this.ScholorshipBox = new System.Windows.Forms.CheckBox();
             this.CheckBoxLabel = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -156,6 +156,7 @@
             // ScholorshipBox
             // 
             this.ScholorshipBox.AutoSize = true;
+            this.ScholorshipBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.ScholorshipBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScholorshipBox.Location = new System.Drawing.Point(148, 127);
             this.ScholorshipBox.Name = "ScholorshipBox";
@@ -163,7 +164,7 @@
             this.ScholorshipBox.TabIndex = 1;
             this.ScholorshipBox.Text = "Scholorship";
             this.ScholorshipBox.UseVisualStyleBackColor = true;
-            this.ScholorshipBox.CheckedChanged += new System.EventHandler(this.ScholorshipBox_CheckedChanged);
+            this.ScholorshipBox.CheckedChanged += new System.EventHandler(this.ScholorshipBox);
             // 
             // CheckBoxLabel
             // 
@@ -177,7 +178,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.SearchButton);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
@@ -190,15 +191,16 @@
             this.tabPage2.Text = "Search For Student";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // SearchButton
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(749, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 42);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.SearchButton.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchButton.Location = new System.Drawing.Point(749, 424);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(131, 42);
+            this.SearchButton.TabIndex = 3;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -207,6 +209,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(152, 30);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -252,7 +255,6 @@
         private System.Windows.Forms.TabPage CreateStudentPage;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label CheckBoxLabel;
-        private System.Windows.Forms.CheckBox ScholorshipBox;
         private System.Windows.Forms.CheckBox StudentWorkerBox;
         private System.Windows.Forms.CheckBox AthleteBox;
         private System.Windows.Forms.Label FNameLabel;
@@ -260,9 +262,10 @@
         private System.Windows.Forms.TextBox FirstNTextBox;
         private System.Windows.Forms.Label LNameLabel;
         private System.Windows.Forms.Button CreateStudent;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.CheckBox ScholorshipBox;
     }
 }
